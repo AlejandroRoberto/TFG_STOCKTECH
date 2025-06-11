@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleProductoSalida">
+
+    <!-- Fondo con degradado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_background">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_stocktech_blanco__1_"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"></ImageView>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:layout_gravity="center">
+
+
+            <!-- Título del Producto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salida de Producto"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:elevation="4dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvProductoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID del Producto"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:elevation="4dp" />
+
+            <!-- Cantidad actual -->
+            <TextView
+                android:id="@+id/tvCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Cantidad:"
+                android:textColor="#2196F3"
+                android:textSize="20sp" />
+
+            <!-- Input para nueva cantidad -->
+            <EditText
+                android:id="@+id/etCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cuanto producto a salido"
+                android:backgroundTint="#888888"
+                android:textColor="#2196F3"
+                android:textColorHint="#2196F3"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:importantForAccessibility="yes" />
+
+            <!-- Botón para actualizar cantidad -->
+            <Button
+                android:id="@+id/btnActualizarCantidad"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Registrar Entrada"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@drawable/btn_nuevo"
+                android:elevation="6dp"
+                android:layout_marginTop="70dp"
+                android:paddingVertical="12dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
